@@ -1,0 +1,584 @@
+
+@keyframes move{
+0%{
+  width:0px;
+  height:0px;
+}
+100%{
+  width:100%;
+  height:100%;
+}
+}
+@keyframes moveb{
+0%{
+  width:0px;
+  height:0px;
+  overflow: hidden;
+}
+100%{
+  width:50px;
+  height:50px;
+}
+}
+@keyframes slidedown{
+0%{
+  height:0px;
+  width:320px;
+}
+100%{
+  height:100%;
+  width:100%;
+}
+}
+@keyframes newsdown{
+  0%{
+    width:100%;
+    height:0;
+   
+  }
+  100%{
+   width: 100%;
+    height:100%;
+  }
+}
+@keyframes newsidown{
+  0%{
+    left:45%;
+    top:0%;
+  }
+  100%{
+    left:45%;
+    top:45%;
+  }
+}
+
+
+.navbar-toggler{
+  background:white;
+}
+h1,h2,h3,h4,h5,h6{
+font-weight: bold;
+}
+.top{
+  background:#43C3EA;
+  padding-top:10px;
+}
+.top p{
+  color:white;
+  font-weight: bold;
+}
+.top i{
+  color:white;
+  padding-right:10px
+}
+.top h3{
+  font-size:18px;
+  font-weight: bold;
+}
+.combine{
+  display: flex;
+  line-height: 0.5;
+}
+.combine p{
+  color:rgba(0, 0, 0, 0.418);
+}
+.combine:hover .circle{
+  border:2px solid black;
+}
+.circle{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:1px solid rgba(0, 0, 0, 0.144);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:5px;
+  margin-right:20px;
+}
+.navc{
+  background:#152545;
+  color:white;
+  position:relative;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show,.navbar-nav:hover{
+  color:white;
+}
+.nav-link,.nav-link:hover{
+  color:white;
+}
+
+.navc button{
+  display:white;
+}
+.dropdown-menu{
+  background:#43C3EA;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar-nav .nav-link.active {
+  color: white;
+  background-color: transparent;
+}
+.navbar-nav .nav-link:active, 
+    .navbar-nav .nav-link:focus, 
+    .navbar-nav .nav-link:hover {
+      color: white;
+      background-color: transparent;
+    }
+
+.navc ul li{
+  padding:10px;
+  border-right:1px solid rgba(0, 128, 0, 0.151);
+}
+.navc ul li a{
+  font-weight: bold;
+}
+.bi-phone{
+  font-size:40px;
+  margin-right:5px;
+  color:#43C3EA;
+}
+.care{
+  color:#43C3EA;
+  font-weight: bold;
+}
+.search{
+  background:#43C3EA;
+  width:70px;
+  height:80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-left:5px;
+  order:1;
+}
+
+/* slider---------------------------------------------------------------------------------------------------- */
+
+.specialise{
+  text-align: center;
+}
+.specialise:hover .aftereffect {
+  display:block;
+}
+.specialise:hover .link{
+  display:flex;
+}
+
+.aftereffect{
+  display:none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:0;
+  height:0;
+  background:#43c3eac9;
+ 
+  animation: move 0.5s linear  1 alternate forwards;
+  
+}
+.image-container {
+  position:relative;
+ 
+}
+.image-container img{
+  width:100%;
+}
+.link{
+  transform: translate(-50%, -50%);
+  animation: moveb 0.5s linear  1 alternate forwards;
+  width:0px;
+  height:0px;
+  background: black;
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:none;
+  justify-content: center;
+  align-items: center;
+}
+.link i{
+  
+  color:white;
+  font-size: 30px;
+}
+.link i:hover{
+  color:#43C3EA;
+}
+
+
+.buy{
+  background:#43C3EA;
+
+  
+}
+.us{
+  background:#2A3B5C;
+
+  
+}
+
+
+
+
+
+/* Categories---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.aa{
+  background:url("http://tk.commonsupport.com/repairplus/wp-content/uploads/2017/02/categories-bg.jpg");
+  
+  /* height:500px; */
+  background-size: cover;
+}
+.cat{
+  font-weight: bold;
+  font-size: 30px;
+  color:white
+}
+.aa .right{
+  background:white;
+  position:relative;
+}
+.aa .blackeffect{
+  display:none;
+  position:absolute;
+  width:0;
+  height:0;
+  background: rgb(21, 37, 69);
+  top:0;
+  left:0;
+  color:white;
+  /* transition:color 0.5s linear 0.5s; */
+  
+}
+.aa .right:hover .blackeffect{
+  display:block;
+  color:white;
+  animation: slidedown 0.5s linear  1 normal forwards;
+  
+}
+.aa .right:hover .r1{
+  color:white;
+}
+.aa .left{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:#43C3EA;
+}
+.aa i{
+  font-size:25px;
+  color:white;
+}
+.bb i{
+  font-size:25px;
+  color:skyblue;
+}
+
+.cc input{
+  margin:20px;
+}
+fieldset{
+  border:2px solid rgba(0, 0, 0, 0.089);
+}
+.cc input{
+  padding:5px 15px;
+}
+.cc select{
+  padding:5px 15px;
+}
+.buttona{
+  background: #43C3EA;
+  padding:5px 20px;
+}
+
+/* --------------------------------------------------------------Latest News-------------------------------------------------------- */
+.dd{
+  background:#152545;
+}
+.dd a{
+  font-size: 15px;
+  color:white;
+ 
+}
+.dd h5{
+  color:white;
+}
+.read{
+  padding-top:15px;
+}
+.repair{
+color:#43C3EA;
+}  
+.repair i{
+  padding-right:10px;
+}
+
+.hover1{
+  position:relative;
+}
+.hover1:hover .effect{
+  display:block;
+  animation: newsdown 0.5s linear  1 normal forwards;
+  
+}
+.effect{
+  display:none;
+  position:absolute;
+  top:0;
+  width:0;
+  height:0;
+  background:#43c3eab2;
+  
+}
+.hover1:hover .link2{
+  display:flex;
+  animation: newsidown 0.5s linear  1 normal forwards;
+}
+.link2{
+  position:absolute;
+  top:45%;
+  left:45%;
+  width:50px;
+  height:50px;
+  background:#13213E;
+  display:none;
+  justify-content: center;
+  align-items: center;
+  
+}
+.link2 i{
+  font-size: 30px;
+  color:white;
+}
+.link2 i:hover{
+  color:#43C3EA;
+}
+
+
+.repairplus{
+  width:100%;height:500px;
+}
+
+/*------------------------------------------- swiper------------------------------------------------------------ */
+.s1{
+width:100%;
+height:100%;
+
+}
+.si1{
+  width:100%;
+  position:absolute;
+  object-fit: cover;
+  height:100%;
+
+}
+.c1{
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  position:absolute;
+  color:white;
+  text-align: center;
+  padding:20px;
+  
+  /* border:2px solid red; */
+  
+}
+.c1 h3{
+  color:black;
+  font-size:50px;
+}
+.c1 p{
+  color:black;
+}
+.c1 button{
+  margin:0 20px;
+  padding:10px 30px;
+  border:none;
+}
+.c2{
+  display:flex;
+  justify-content: right;
+  padding:0 100px;
+}
+/*  ////End  swiper------------------------------------------------------*/
+.gg{
+background:#152545;
+}
+.gg .purchase{
+background: #43C3EA;
+padding:10px 15px;
+}
+.hh{
+background:#13213E;
+}
+.services{
+padding-left:40px;
+}
+.hh li{
+padding:5px;
+}
+.hh a{
+text-decoration: none;
+color:white;
+
+}
+.hh input{
+background:#152545;
+width:100%
+}
+.enter{
+position:relative;
+
+}
+.paper{
+position:absolute;
+top:0%;
+right:5%;
+color:#43C3EA
+}
+.icons i{
+color:white;
+padding:0px 10px;
+}
+.info i{
+color:#43C3EA;
+padding:0 10px;
+}
+.navbar {
+padding-top:0;
+padding-bottom: 0;
+}
+
+/* ----------------------------Testimonials Swiper-------------------------------- */
+.s1{
+  width:100%;
+  height:100%;
+}
+.john{
+  border:1px solid rgba(0, 0, 0, 0.158);
+  text-align: center;
+}
+.john .group{
+  background: skyblue;
+  width:25%;
+  height:25px;
+}
+.john i{
+  color:white;
+  font-size: 12px;
+}
+.john h5{
+  color:skyblue;
+ 
+}
+.john h6{
+  text-align: start;
+  color:#43C3EA;
+}
+/*-----------------------------End Testimonial Swiper-=-----------------------------*/
+
+/* -------------------------------News page 1 ipad repairs------------------------------------------ */
+
+
+.news1{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+  padding:15px 0px;
+}
+.school{
+  background:#F7F7F7;
+}
+.news1 a{
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.usa a{
+  color:#43C3EA
+}
+.content{
+  max-width: 800px;
+  margin:auto;
+}
+.content img{
+  width:100%;
+}
+.sep{
+  background:#43C3EA;
+  font-weight: bold;
+  color:white;
+}
+.content i{
+  padding:0 10px;
+  color:#2A3B5C;
+}
+.box{
+  border:1px solid rgba(0, 0, 0, 0.219);
+  border-radius: 50%;
+  width:40px;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 3px;
+}
+.box:hover{
+  background: #43C3EA;
+  cursor: pointer;
+}
+.admin{
+  background:#F7F7F7;
+}
+.formdata input{
+  width:100%;
+  padding:10px 10px;
+}
+.formdata button{
+  background:#43C3EA;
+  padding:15px 25px;
+  border:none;
+  color:white;
+  font-weight: bold;
+}
+/* ------------------------------End-News page 1 ipad repairs------------------------------------------ */
+
+@media (max-width:576px){
+  .c1 h3{
+    font-size:30px;
+  }
+  .c1 p{
+    font-size:10px;
+  }
+  .c1 button{
+   
+    width:90px;
+    font-size: 10px;
+    padding:10px 10px;
+    color:white;
+  }
+  
+}
+
+/* //---------------------------------------Counting UP--------------------------------------- */
+.line{
+  width:50px;
+  height:2px;
+  background:#43C3EA;
+  margin:auto;
+}
+.App{
+  text-align: center;
+  color:white;
+  padding:50px 0;
+ 
+}
+.co1{
+  background:#1F2E4C;
+}
